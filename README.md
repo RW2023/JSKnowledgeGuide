@@ -1,6 +1,9 @@
 JavaScript Knowledge Guide
 
 Welcome to the JavaScript Knowledge Guide repository! This guide is intended to serve as a comprehensive resource for learning JavaScript, one of the most popular and widely-used programming languages in the world.
+
+I put together this guide as a tool to help me learn. I hope to practice and improve both JavaScript and version control as a result. 
+
 Table of Contents
 
     Introduction to JavaScript

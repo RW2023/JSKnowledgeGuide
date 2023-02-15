@@ -7,6 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the Highlight.js stylesheet for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/dracula.min.css">
+    <!-- Include the Highlight.js library -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <!-- Call the highlightAll() function to automatically highlight code blocks on the page -->
+    <script>hljs.highlightAll();</script>
     <!-- Title -->
     <title>JS_Knowledge_Guide</title>
     <!-- Bootstrap Links -->
@@ -26,7 +32,7 @@
 <!-- Main Section Begins -->
 
 <body>
-    <div class="container bg-dark text-light text-center" id="bs-container">
+    <div class="container-fluid">
         <h1>JavaScript Essential Skills</h1>
 
         <h2>I. Introduction</h2>
@@ -66,7 +72,40 @@
                     This
                     is
                     useful for performing tasks that need to be repeated multiple times.</p>
+<pre class="language-javascript">
+// Example of loops in JavaScript
 
+// For loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// For...in loop
+const obj = {a: 1, b: 2, c: 3};
+for (const prop in obj) {
+  console.log(`${prop}: ${obj[prop]}`);
+}
+
+// For...of loop
+const arr = [1, 2, 3];
+for (const elem of arr) {
+  console.log(elem);
+}
+
+// While loop
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+// Do...while loop
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 5);
+</pre>
                 <h2>III. Functions and Objects</h2>
                 <h3>A. Functions</h3>
                 <h4>1. Defining functions</h4>
@@ -129,8 +168,7 @@
                     and event
                     handling, you should now have a solid foundation in JavaScript programming.</p>
     </div>
-
-
 </body>
-
+<!-- script to call hljs-->
+<script src="./src/scripts/hl.js"></script>
 </html>

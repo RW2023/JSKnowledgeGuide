@@ -24,3 +24,77 @@ a:hover {
   color: #03a9f4;
 }
 
+/* Define styles for the code block container */
+pre {
+  background-color: #282a36;
+  color: #f8f8f2;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  text-align: left;
+}
+
+/* Define styles for the syntax highlighting */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #192566;
+  color: #f8f8f2;
+}
+
+/* Define styles for different types of syntax */
+.hljs-comment,
+.hljs-quote {
+  color: #6272a4;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #ff79c6;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #f1fa8c;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-regexp,
+.hljs-meta {
+  color: #8be9fd;
+}
+
+.hljs-number,
+.hljs-variable,
+.hljs-template-variable {
+  color: #50fa7b;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #bd93f9;
+}
+
+.hljs-meta-string {
+  color: #f1fa8c;
+}
+
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-operator,
+.hljs-punctuation {
+  color: #ff5555;
+}

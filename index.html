@@ -26,7 +26,7 @@
 <!-- Main Section Begins -->
 
 <body>
-    <div class="container bg-dark text-light text-center" id="bs-container">
+    <div class="container bg-dark text-light text-left" id="bs-container">
         <h1>JavaScript Essential Skills</h1>
 
         <h2>I. Introduction</h2>
@@ -66,7 +66,25 @@
                     This
                     is
                     useful for performing tasks that need to be repeated multiple times.</p>
+<pre class="language-javascript hljs">
+// for loop: runs a block of code a specific number of times
+for (let i = 0; i < 5; i++) { 
+    console.log(`for loop iteration ${i}`);
+ } 
 
+// while loop: runs a block of code as long as a
+    certain condition is true 
+    let j=0; while (j < 5) { 
+    console.log(`while loop iteration ${j}`); j++;
+ } 
+
+// do...while
+    loop: runs a block of code at least once, and then continues to run as long as a certain condition is true
+     let k=0;
+    do { 
+        console.log(`do...while loop iteration ${k}`); k++; 
+        } while (k < 5);
+</pre>
                 <h2>III. Functions and Objects</h2>
                 <h3>A. Functions</h3>
                 <h4>1. Defining functions</h4>
@@ -132,5 +150,6 @@
 
 
 </body>
+<script src="./src/scripts/hl.js"></script>
 
 </html>

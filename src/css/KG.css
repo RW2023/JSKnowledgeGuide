@@ -39,7 +39,7 @@ pre {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #192566;
+  background: #282a36;
   color: #f8f8f2;
 }
 
@@ -73,18 +73,18 @@ pre {
 .hljs-link,
 .hljs-regexp,
 .hljs-meta {
-  color: #8be9fd;
+  color: #50fa7b;
 }
 
 .hljs-number,
 .hljs-variable,
 .hljs-template-variable {
-  color: #50fa7b;
+  color: #bd93f9;
 }
 
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #bd93f9;
+  color: #50fa7b;
 }
 
 .hljs-meta-string {
@@ -96,5 +96,5 @@ pre {
 .hljs-selector-pseudo,
 .hljs-operator,
 .hljs-punctuation {
-  color: #ff5555;
+  color: #ff79c6;
 }

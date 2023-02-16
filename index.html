@@ -66,31 +66,83 @@
                     This
                     is
                     useful for performing tasks that need to be repeated multiple times.</p>
-<pre class="language-javascript hljs">
-// for loop: runs a block of code a specific number of times
-for (let i = 0; i < 5; i++) { 
-    console.log(`for loop iteration ${i}`);
- } 
+                <pre class="language-javascript hljs">
+        // for loop: runs a block of code a specific number of times
+        for (let i = 0; i < 5; i++) { 
+        console.log(`for loop iteration ${i}`);
+        } 
 
-// while loop: runs a block of code as long as a
-    certain condition is true 
-    let j=0; while (j < 5) { 
-    console.log(`while loop iteration ${j}`); j++;
- } 
+        // while loop: runs a block of code as long as a
+        certain condition is true 
+        let j=0; while (j < 5) { 
+        console.log(`while loop iteration ${j}`); j++;
+        } 
 
-// do...while
-    loop: runs a block of code at least once, and then continues to run as long as a certain condition is true
-     let k=0;
-    do { 
+        // do...while
+        loop: runs a block of code at least once, and then continues to run as long as a certain condition is true
+        let k=0;
+        do { 
         console.log(`do...while loop iteration ${k}`); k++; 
         } while (k < 5);
-</pre>
+        </pre>
                 <h2>III. Functions and Objects</h2>
                 <h3>A. Functions</h3>
                 <h4>1. Defining functions</h4>
                 <p>Functions are blocks of code that can be called by other parts of your code. You can define a
                     function in
                     JavaScript using the "function" keyword, followed by the function name and a list of parameters.</p>
+        <pre class="language-javascript hljs">
+        function addNumbers(num1, num2) {
+        return num1 + num2;
+        }
+        Anonymous functions
+        An anonymous function is a function that does not have a name. You can define an anonymous function in JavaScript by
+        assigning it to a variable.
+        const addNumbers = function(num1, num2) {
+        return num1 + num2;
+        }
+        Arrow functions
+        An arrow function is a shorthand way of defining a function in JavaScript. It uses the "=>" operator and has a simpler
+        syntax than a regular function.
+    
+        Example:
+    
+        javascript
+        
+        const addNumbers = (num1, num2) => num1 + num2;
+    
+        Higher-order functions
+        A higher-order function is a function that takes another function as a parameter or returns a function.
+    
+        Example:
+    
+        javascript
+        
+        function addNumbers(num1, num2) {
+        return num1 + num2;
+        }
+    
+        function operateOnNumbers(num1, num2, operation) {
+        return operation(num1, num2);
+        }
+    
+        operateOnNumbers(5, 10, addNumbers); // returns 15
+
+        In the above example, operateOnNumbers is a higher-order function that takes addNumbers as a parameter.
+        function addNumbers(num1, num2) {
+        return num1 + num2;
+        }
+        
+        function operateOnNumbers(num1, num2, operation) {
+        return operation(num1, num2);
+        }
+        
+        operateOnNumbers(5, 10, addNumbers); // returns 15
+
+
+        In the above example, operateOnNumbers is a higher-order function that takes addNumbers as a parameter.
+
+        </pre>
                 <h4>2. Parameters and return values</h4>
                 <p>Functions can accept parameters, which are values passed to the function when it is called. Functions
                     can

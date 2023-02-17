@@ -9,29 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>JS_Knowledge_Guide</title>
+   
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- Highlight js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/languages/go.min.js"></script>
+
+    <!-- Local Style Sheet -->
+    <link rel="stylesheet" href="./src/css/default.min.css">
     <!-- Bootstrap Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <!-- Google Font Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <!-- Highlight js  -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
-
-    <!-- Local Style Sheet -->
-    <link rel="stylesheet" href="./src/css/KG.css">
     <!-- End of Links  -->
 </head>
 <!-- Main Section Begins -->
 
 <body>
-    <div class="container bg-dark text-light text-left" id="bs-container">
+<div class="container bg-body-secondary text-dark" id="bs-container">
         <h1>JavaScript Essential Skills</h1>
 
         <h2>I. Introduction</h2>
@@ -71,7 +73,8 @@
                     This
                     is
                     useful for performing tasks that need to be repeated multiple times.</p>
-                <pre class="language-javascript hljs">
+            <code class="hljs">
+                <pre class="code">
         // for loop: runs a block of code a specific number of times
         for (let i = 0; i < 5; i++) { 
         console.log(`for loop iteration ${i}`);
@@ -90,13 +93,16 @@
         console.log(`do...while loop iteration ${k}`); k++; 
         } while (k < 5);
         </pre>
+        </code>
+           
                 <h2>III. Functions and Objects</h2>
                 <h3>A. Functions</h3>
                 <h4>1. Defining functions</h4>
                 <p>Functions are blocks of code that can be called by other parts of your code. You can define a
                     function in
                     JavaScript using the "function" keyword, followed by the function name and a list of parameters.</p>
-        <pre class="language-javascript hljs">
+        <code class="hljs">
+                        <pre class="code">
         function addNumbers(num1, num2) {
         return num1 + num2;
         }
@@ -148,6 +154,8 @@
         In the above example, operateOnNumbers is a higher-order function that takes addNumbers as a parameter.
 
         </pre>
+        </code>
+        
                 <h4>2. Parameters and return values</h4>
                 <p>Functions can accept parameters, which are values passed to the function when it is called. Functions
                     can

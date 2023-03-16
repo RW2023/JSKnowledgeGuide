@@ -16,7 +16,11 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   flex: auto;
-  margin: 10rem;
-
 }
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem;
+}

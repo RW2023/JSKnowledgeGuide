@@ -1,26 +1,8 @@
+/* CSS Reset */
 
-/* Basic styles */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: whitesmoke;
-  background-color: #18122B;
-  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  text-underline-position: below;
-  text-decoration: underline;
-}
-
-a {
-  color: #039be5;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #03a9f4;
-}
+/* End of Reset */
 

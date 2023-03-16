@@ -6,3 +6,17 @@ body {
 }
 /* End of Reset */
 
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+  font-family: 'Source Code Pro', monospace;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: auto;
+  margin: 10rem;
+
+}
+

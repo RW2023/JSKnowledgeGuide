@@ -12,15 +12,68 @@ body{
   font-family: 'Source Code Pro', monospace;
   background-color: black;
   color: whitesmoke;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex: auto;
+  flex: auto; */
+  box-sizing: border-box;
+}
+
+/* Nav bar */
+nav {
+  background-color: rgb(44, 120, 143);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 5%;
+}
+
+nav ul {
+  /* justify-content: flex-end; */
+  /* float: right; */
+  /* margin-right: 20px; */
+} 
+
+nav ul li {
+  display: inline-block; 
+  padding: 0px 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-style: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: rgb(197, 62, 62);
+  transition: .3s;
+}
+
+.title {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: inline-block; 
+  margin-right: auto;
+  /* line-height: 80px;
+  margin: 0 5px;
+  padding: 0 100px; */
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
 }
 
 .container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 1rem;
+  /* margin: 1rem; */
+}
+
+.intro-container {
+
 }

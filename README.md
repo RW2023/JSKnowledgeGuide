@@ -25,3 +25,5 @@
 
 
 *This guide is a work in progress and contributions are always welcome! If you'd like to suggest a change or correction, please open an issue or create a pull request.*
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2caf5129-ba10-4077-8bf6-2bd5cc224f1a/deploy-status)](https://app.netlify.com/sites/jsknowledge/deploys)

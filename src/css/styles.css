@@ -1,26 +1,192 @@
 /* CSS Reset */
+html{
+  font-size: 62.5%;
+}
 
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, rgb(133,242,144,60%) , rgb(7,217,196,82%) ) ;
+  font-family: 'Source Code Pro', sans-serif;
 }
 /* End of Reset */
 
+/* universal styling  */
+
+.topic h2{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.topic-details h3{
+  color: rgb(61, 70, 100);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.subtopic h3{
+  font-size: 1.8rem;
+}
+
+.subtopic-text{
+  font-size: 1.5rem;
+}
+
+.sub-of-subtopic h4{
+  font-size: 1.6rem;
+  color: rgb(53, 55, 56);
+}
+
+.sub-of-sub-text p{
+  font-size: 1.3rem;
+}
+
+
+/* header  */
+
+header{
+  text-align: center;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .img{
+  width: 10rem;
+}
+
+header .img img{
+  width: inherit;
+}
+
+header h1{
+  font-size: 2rem;
+}
+
+main{
+  width: 90%;
+  margin: auto
+}
+
+
+/* code container  */
+.code-container{
+  background-color: rgba(214, 204, 204, 0.438);
+  padding: 2rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.404);
+}
+
+
+
+.code-container code{
+  font-size: 1rem;
+  word-wrap: normal;
+  line-height: 2rem
+}
+
+
+@media only screen and (min-width: 800px) {
+  main{
+    max-width: 1000px;
+  }
+
+  header h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .topic h2 {
+    font-size: 2.5rem;
+  }
+
+  .subtopic h3{
+    font-size: 2rem;
+  }
+
+  .sub-of-subtopic h4{
+    font-size: 2rem;
+  }
+
+  .sub-of-sub-text p {
+    font-size: 1.8rem;
+  }
+
+  .code-container code{
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .conclusion-text p {
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    main{
+      max-width: 70%;
+    }
+
+  header {
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header .img {
+      width: 20rem;
+    }
+  
+    header .img img {
+      width: inherit;
+    }
+  
+    header h1 {
+      font-size: 5rem;
+    }
+
+  .topic h2 {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  
+    
+  
+    .subtopic h3 {
+      font-size: 3.5rem;
+    }
+  
+    .subtopic-text {
+      font-size: 1.5rem;
+    }
+  
+    .sub-of-subtopic h4 {
+      font-size: 3rem;
+    }
+
+
+  
+    .sub-of-sub-text p {
+      font-size: 2.3rem;
+    }
+
+    .code-container code {
+      font-size: 2.3rem;
+      line-height: 4rem
+    }
+
+    .conclusion-text p{
+      font-size: 2.3rem
+    }
+}
+
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-body{
-  font-family: 'Source Code Pro', monospace;
-  background-color: black;
-  color: whitesmoke;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex: auto;
-}
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 1rem;
-}

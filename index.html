@@ -23,222 +23,383 @@
 <!-- Main Section Begins -->
 
 <body>
-<div class="container">
-    <!-- Navbar -->
     <nav>
-        <a href="#" class="title"> 
-            <span class="nav-item">JavaScript Essential Skills</span>
-        </a>
-        <ul>
-            <li><a href="#">
-                <i class="fa-solid fa-record-vinyl"></i>
-                <span class="nav-item">Introduction</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-file-audio"></i>
-                <span class="nav-item">Fundamentals</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="nav-item">Functions and Objects</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="nav-item">Arrays</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="nav-item">DOM and Events</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="nav-item">Conclusion</span>
-            </a></li>
-        </ul>
+        <div class="logo">
+            <div class="img">
+                <img src="./src/img/logo.png" alt="">
+            </div>
+            <div class="title">
+                <a href="#" class="title">
+                    <span class="nav-item">JavaScript Essential Skills</span>
+                </a>
+            </div>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#introduction">
+                        <i class="fa-solid fa-record-vinyl"></i>
+                        <span class="nav-item">Introduction</span>
+                    </a></li>
+                <li><a href="#fundamentals">
+                        <i class="fa-solid fa-file-audio"></i>
+                        <span class="nav-item">Fundamentals</span>
+                    </a></li>
+                <li><a href="#functions">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="nav-item">Functions and Objects</span>
+                    </a></li>
+                <li><a href="#arrays">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="nav-item">Arrays</span>
+                    </a></li>
+                <li><a href="#dom">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="nav-item">DOM and Events</span>
+                    </a></li>
+                <li><a href="#conclusion">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="nav-item">Conclusion</span>
+                    </a></li>
+            </ul>
+        </div>
     </nav>
-    <!-- Intro -->
-    <div class="intro-container">
-        <h2>I. Introduction</h2>
-        <h3>A. Background on JavaScript</h3>
-        <p>JavaScript is a high-level, dynamic, and interpreted programming language that is widely used for web
-            development. It
-            is an essential skill for building dynamic, interactive websites and web applications.</p>
-        <h3>B. Purpose of the guide</h3>
-        <p>The purpose of this guide is to provide a comprehensive introduction to the essential skills needed to become
-            proficient in JavaScript.</p>
-    </div>
+    <header>
+        <h1>JavaScript Essential Skills</h1>
+    </header>
+    <main>
+        <section id="intorduction">
+            <div class="introduction topic">
+                <h2>I. Introduction</h2>
+            </div>
+            <div class="topic-details">
+                <div class="background-on-js subtopic">
+                    <h3>A. Background on JavaScript</h3>
+                </div>
+                <div class="subtopic-text">
+                    <p>JavaScript is a high-level, dynamic, and interpreted programming language that is widely used for
+                        web
+                        development. It
+                        is an essential skill for building dynamic, interactive websites and web applications.</p>
+                </div>
+            </div>
+            <div class="topic-details">
+                <div class="purpose-of-guide subtopic">
+                    <h3>B. Purpose of the guide</h3>
+                </div>
+                <div class="subtopic-text">
+                    <p>The purpose of this guide is to provide a comprehensive introduction to the essential skills
+                        needed
+                        to become
+                        proficient in JavaScript.</p>
+                </div>
+            </div>
+        </section>
+        <section id="fundamentals">
+            <div class="variables topic">
+                <h2>Fundamentals</h2>
+            </div>
+            <div class="topic-details">
+                <div class="var-and-data subtopic">
+                    <h3>A. Variables and Data Types</h3>
+                </div>
+                <div class="subtopic-text">
+                    <p>Variables are containers for storing values. In JavaScript, you declare a variable using the
+                        "var"
+                        keyword,
+                        followed
+                        by the name of the variable and an optional value.</p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Declaring variables</h4>
+                </div>
+                <div class="sub-of-sub-text">
 
-    <!-- Section 2 -->
-    <div class="fundamental-container">
-        <h2>II. Fundamentals of JavaScript</h2>
-        <h3>A. Variables and Data Types</h3>
-        <h4>1. Declaring variables</h4>
-        <p>Variables are containers for storing values. In JavaScript, you declare a variable using the "var" keyword,
-            followed
-            by the name of the variable and an optional value.</p>
-        <h4>2. Data types</h4>
-        <p>JavaScript supports several data types, including strings, numbers, booleans, and others. It is important to
-            understand these data types in order to write efficient and effective code.</p>
-        <h3>B. Operators and Expressions</h3>
-        <h4>1. Arithmetic operators</h4>
-        <p>JavaScript supports a range of arithmetic operators, including +, -, *, and /. These operators allow you to
-            perform
-            basic arithmetic operations in your code.</p>
-        <h4>2. Comparison operators</h4>
-        <p>JavaScript also supports a range of comparison operators, including >, <,==, and !=. These operators allow
-                you to compare values and make decisions in your code based on those comparisons.</p>
-                <h3>C. Control Flow</h3>
-                <h4>1. Conditional statements</h4>
-                <p>Conditional statements, such as if/else, allow you to make decisions in your code based on
-                    conditions.
-                    You
-                    can use these statements to perform different actions based on different conditions.</p>
-                <h4>2. Loops</h4>
-                <p>Loops, such as for and while, allow you to repeat blocks of code until a certain condition is met.
-                    This
-                    is
-                    useful for performing tasks that need to be repeated multiple times.</p>
-    </div>
-    <!-- Section 3 -->
-    <div class="functions-container">
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Data types</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>JavaScript supports several data types, including strings, numbers, booleans, and others. It is
+                        important to
+                        understand these data types in order to write efficient and effective code.</p>
+                </div>
+            </div>
+            <div class="topic-details">
+                <div class="operators-and-expressions subtopic">
+                    <h3>B. Operators and Expressions</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Arithmetic operators</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>JavaScript supports a range of arithmetic operators, including +, -, *, and /. These operators
+                        allow
+                        you to
+                        perform
+                        basic arithmetic operations in your code.</p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Comparison operators</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>JavaScript also supports a range of comparison operators, including >, <,==, and !=. These
+                            operators allow you to compare values and make decisions in your code based on those
+                            comparisons.</p>
+                </div>
+            </div>
+            <div class="topic-details">
+                <div class="control-flow subtopic">
+                    <h3>C. Control Flow</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Conditional statements</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>Conditional statements, such as if/else, allow you to make decisions in your code based on
+                        conditions.
+                        You
+                        can use these statements to perform different actions based on different conditions.</p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Loops</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Loops, such as for and while, allow you to repeat blocks of code until a certain condition is
+                        met.
+                        This is useful for performing tasks that need to be repeated multiple times.
+                    </p>
+                </div>
+        </section>
+        <section id="functions">
+            <div class="variables topic">
                 <h2>III. Functions and Objects</h2>
-                <h3>A. Functions</h3>
-                <h4>1. Defining functions</h4>
-                <p>Functions are blocks of code that can be called by other parts of your code. You can define a
-                    function in
-                    JavaScript using the "function" keyword, followed by the function name and a list of parameters.</p>
+            </div>
+            <div class="topic-details">
+                <div class="functions subtopic">
+                    <h3>A. Functions</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Defining functions</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Functions are blocks of code that can be called by other parts of your code. You can define a
+                        function in
+                        JavaScript using the "function" keyword, followed by the function name and a list of parameters.
+                    </p>
+                </div>
+                <div class="function-declaration subtopic">
                     <h3>Function Declarations</h3>
-                    <h4>Function declarations are named functions that can be called anywhere in the code, even before they are defined. Here's
-                    an example:</h4>
-                <pre><code>function addNumbers(a, b) {
-                    return a + b;
-                    }
+                </div>
+                <div class="subtopic-text">
+                    <p>
+                        Function declarations are named functions that can be called anywhere in the code, even before
+                        they
+                        are defined. Here's
+                        an example:
+                    </p>
+                </div>
+                <div class="code-container">
+                    <pre><code>function addNumbers(a, b) {
+console.log(addNumbers(5, 7)); // Output: 12
+return a + b;
+}
+                    </code></pre>
+                </div>
+                <div class="function-expressions subtopic">
+                    <h3>Function Expressions</h3>
+                </div>
+                <div class="subtopic-text">
+                    <p>
+                        Function expressions are functions that are assigned to a variable or a constant. These
+                        functions
+                        can only be called
+                        after they are defined. Here's an example:
+                    </p>
+                </div>
+                <div class="code-container">
+                    <pre><code>function addNumbers(a, b) {
+return a + b;
+}
+
+console.log(addNumbers(5, 7)); // Output: 12
+                    </code></pre>
+                    <pre><code>
+const multiplyNumbers = function(a, b) {
+return a * b;
+};
+
+console.log(multiplyNumbers(5, 7)); 
+// Output: 35
                     
-                    console.log(addNumbers(5, 7)); // Output: 12
-        </code></pre>
-        <h3>Function Expressions</h3>
-        <h4>Function expressions are functions that are assigned to a variable or a constant. These functions can only be called
-        after they are defined. Here's an example:</h4>
-        <pre><code>
-        const multiplyNumbers = function(a, b) {
-        return a * b;
-        };
-
-        console.log(multiplyNumbers(5, 7)); // Output: 35
-
-        </code></pre>
-        <h3>Arrow Functions</h3>
-        <pre><code>
-        const doubleNumber = (num) => num * 2;
-
-        console.log(doubleNumber(5)); // Output: 10
-
-        </code></pre>
-                <h4>2. Parameters and return values</h4>
-                <p>Functions can accept parameters, which are values passed to the function when it is called. Functions
-                    can
-                    also return values, which are values that are returned to the calling code when the function is
-                    complete.
-                </p>
-                <h3>B. Objects</h3>
-                <h4>1. Creating objects</h4>
-                <p>Objects in JavaScript are collections of key-value pairs that represent real-world objects, such as a person, a car,
-                    or a bank account. You can create an object in JavaScript using object literal notation or using a constructor
-                    function.</p>
-                
-                <pre><code>
-                      // Example of creating an object using object literal notation
-                      const person = {
-                        firstName: "John",
-                        lastName: "Doe",
-                        age: 30,
-                        hobbies: ["reading", "writing", "swimming"],
-                        address: {
-                          street: "123 Main St",
-                          city: "Anytown",
-                          state: "CA",
-                          zip: "12345"
-                        }
-                      };
-                
-                      // Example of creating an object using a constructor function
-                      function Car(make, model, year) {
-                        this.make = make;
-                        this.model = model;
-                        this.year = year;
-                      }
-                      const myCar = new Car("Toyota", "Corolla", 2021);
                     </code></pre>
-                
-                <h4>2. Accessing and manipulating object properties</h4>
-                <p>Once you have created an object, you can access and manipulate its properties using dot notation or bracket notation.
-                    You can also add, modify, and delete properties of an object as needed.</p>
-                
-                <pre><code>
-                      // Example of accessing object properties using dot notation
-                      console.log(person.firstName); // Output: "John"
-                
-                      // Example of accessing object properties using bracket notation
-                      console.log(person["hobbies"][0]); // Output: "reading"
-                
-                      // Example of adding a new property to an object
-                      person.email = "john.doe@example.com";
-                
-                      // Example of modifying an existing property of an object
-                      person.age = 31;
-                
-                      // Example of deleting a property of an object
-                      delete person.address.zip;
+                </div>
+                <div class="arrow-functions subtopic">
+                    <h3>Arrow Functions</h3>
+                </div>
+                <div class="code-container">
+                    <pre><code>
+const doubleNumber = (num) => num * 2;
+
+console.log(doubleNumber(5)); // Output: 10
+                    
                     </code></pre>
-                    </div>
-                    <!-- Section 4 -->
-                    <div class="arrays-container">
-                        <h2>IV. Arrays and Array Methods</h2>
-                        <h3>A. Arrays</h3>
-                        <h4>1. Creating and accessing arrays</h4>
-                        <p>Arrays in JavaScript are ordered lists of values. You can create an array using square brackets, and
-                            access elements
-                            of the array using their index number.</p>
-                        <h4>2. Array methods</h4>
-                        <p>JavaScript provides a number of useful array methods, such as "push", "pop", "shift", and "unshift".
-                            These methods
-                            allow you to add and remove elements from an array, as well as perform other operations on arrays.
-                        </p>
-                    </div>
-                    <!-- Section 5 -->
-                    <div class="dom-container">
-                        <h2>V. DOM Manipulation and Event Handling</h2>
-                        <h3>A. DOM Manipulation</h3>
-                        <h4>1. Understanding the Document Object Model (DOM)</h4>
-                        <p>The Document Object Model (DOM) is a hierarchical representation of an HTML document, and provides a
-                            way to
-                            programmatically access and manipulate the content of a web page.</p>
-                        <h4>2. Selecting and manipulating elements</h4>
-                        <p>You can use JavaScript to select elements in the DOM using methods such as "getElementById",
-                            "querySelector", and
-                            "querySelectorAll". Once you have selected an element, you can manipulate its properties, such as
-                            its text content,
-                            style, or attributes.</p>
-                        <h3>B. Event Handling</h3>
-                        <h4>1. Understanding events</h4>
-                        <p>Events are actions that occur in the browser, such as a user clicking a button or a page finishing
-                            loading.
-                            JavaScript provides a way to handle events and respond to them in your code.</p>
-                        <h4>2. Adding event listeners</h4>
-                        <p>You can add event listeners in JavaScript using the "addEventListener" method. This method allows you
-                            to specify the
-                            type of event you want to listen for and the function to be called when the event occurs.</p>
-                    </div>
-                    <!-- Section 6 -->
-                    <div class="conclusion-container">
-                        <h2>VI. Conclusion</h2>
-                        <p>This guide has covered the essential skills needed to become proficient in JavaScript. By
-                            understanding variables,
-                            data types, operators, control flow, functions, objects, arrays, array methods, DOM manipulation,
-                            and event
-                            handling, you should now have a solid foundation in JavaScript programming.</p>
-                    </div>
-                    </div>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Parameters and return values</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Functions can accept parameters, which are values passed to the function when it is called.
+                        Functions
+                        can
+                        also return values, which are values that are returned to the calling code when the function is
+                        complete.
+                    </p>
+                </div>
+            </div>
+            <div class="topic-details">
+                <div class="objects subtopic">
+                    <h3>B. Objects</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Creating objects</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Objects in JavaScript are collections of key-value pairs that represent real-world objects, such
+                        as a
+                        person, a car,
+                        or a bank account. You can create an object in JavaScript using object literal notation or using
+                        a
+                        constructor
+                        function.
+                    </p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Accessing and manipulating object properties</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>Once you have created an object, you can access and manipulate its properties using dot notation
+                        or
+                        bracket notation.
+                        You can also add, modify, and delete properties of an object as needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="arrays">
+            <div class="arrays topic">
+                <h2>IV. Arrays and Array Methods</h2>
+            </div>
+            <div class="topic-details">
+                <div class="arrays subtopic">
+                    <h3>A. Arrays</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Creating and accessing arrays</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Arrays in JavaScript are ordered lists of values. You can create an array using square brackets,
+                        and
+                        access elements
+                        of the array using their index number.
+                    </p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Array methods</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        JavaScript provides a number of useful array methods, such as "push", "pop", "shift", and
+                        "unshift".
+                        These methods
+                        allow you to add and remove elements from an array, as well as perform other operations on
+                        arrays.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="dom">
+            <div class="dom topic">
+                <h2>V. DOM Manipulation and Event Handling</h2>
+            </div>
+            <div class="topic-details">
+                <div class="arrays subtopic">
+                    <h3>A. DOM Manipulation</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Understanding the Document Object Model (DOM)</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        The Document Object Model (DOM) is a hierarchical representation of an HTML document, and
+                        provides a
+                        way to
+                        programmatically access and manipulate the content of a web page.
+                    </p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Selecting and manipulating elements</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        You can use JavaScript to select elements in the DOM using methods such as "getElementById",
+                        "querySelector", and
+                        "querySelectorAll". Once you have selected an element, you can manipulate its properties, such
+                        as
+                        its text content,
+                        style, or attributes.
+                    </p>
+                </div>
+            </div>
+            <div class="topic-details">
+                <div class="arrays subtopic">
+                    <h3>B. Event Handling</h3>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>1. Understanding events</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        Events are actions that occur in the browser, such as a user clicking a button or a page
+                        finishing
+                        loading.
+                        JavaScript provides a way to handle events and respond to them in your code.
+                    </p>
+                </div>
+                <div class="sub-of-subtopic subtopic2">
+                    <h4>2. Adding event listeners</h4>
+                </div>
+                <div class="sub-of-sub-text">
+                    <p>
+                        You can add event listeners in JavaScript using the "addEventListener" method. This method
+                        allows you
+                        to specify the
+                        type of event you want to listen for and the function to be called when the event occurs.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="conclusion">
+            <div class="conclusion topic">
+                <h2>VI. Conclusion</h2>
+            </div>
+            <div class="conclusion-text">
+                <p>This guide has covered the essential skills needed to become proficient in JavaScript. By
+                    understanding variables,
+                    data types, operators, control flow, functions, objects, arrays, array methods, DOM manipulation,
+                    and event
+                    handling, you should now have a solid foundation in JavaScript programming.</p>
+            </div>
+        </section>
+
+
+
+    </main>
+
 
 </body>
 <footer>

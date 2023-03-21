@@ -42,6 +42,63 @@ body {
   font-size: 1.3rem;
 }
 
+/* navbar  */
+nav {
+  background-color: rgb(44, 120, 143);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+}
+
+nav .navlinks ul{
+  padding: 0px 15px;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+nav .navlinks ul li a {
+  color: white;
+  font-style: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* list-style: none; */
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: rgb(246, 250, 2);
+  transition: .3s;
+  padding-bottom: .5rem;
+  border-bottom: 2px white solid;
+}
+
+nav ul li {
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: auto;
+  /* line-height: 80px;
+  margin: 0 5px;
+  padding: 0 100px; */
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navlinks ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* header  */
 
@@ -54,13 +111,22 @@ header{
   align-items: center;
 }
 
-header .img{
-  width: 10rem;
+nav .logo{
+  display: flex;
+  align-items: center;
 }
 
-header .img img{
-  width: inherit;
+nav .logo .img{
+  width: 8rem;
+  margin-right: 2rem;
 }
+
+nav .img img{
+  width: inherit;
+  
+}
+
+
 
 header h1{
   font-size: 2rem;
@@ -90,13 +156,17 @@ main{
 
 
 @media only screen and (min-width: 800px) {
+  nav{
+    flex-direction: row;
+  }
+
   main{
     max-width: 1000px;
   }
 
   header h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .topic h2 {
     font-size: 2.5rem;
@@ -126,6 +196,16 @@ main{
 
 
 @media only screen and (min-width: 1500px) {
+  nav .navlinks ul{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav .navlinks ul li{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+  }
+
 
     main{
       max-width: 70%;

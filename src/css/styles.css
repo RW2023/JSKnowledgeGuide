@@ -9,6 +9,7 @@ body {
   background: linear-gradient(to bottom, rgb(133,242,144,60%) , rgb(7,217,196,82%) ) ;
   font-family: 'Source Code Pro', sans-serif;
   transition: background 0.2s linear;
+  font-size: 1.6rem;
 }
 
 body.dark {
@@ -61,14 +62,40 @@ body.dark {
 /* End of Toggle switch */
 /* universal styling  */
 
+h1 {
+  font-weight: 700;
+  font-style: bold;
+  /* color:  rgb(44, 120, 143); */
+  text-shadow: 0 1px 2px white;
+  overflow: hidden;
+  border-right: #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  
+}
+ @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+ }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+
+
 .topic h2{
   font-size: 2rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .topic-details h3{
-  color: rgb(61, 70, 100);
+  color: #4361ee;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -130,8 +157,9 @@ nav ul li {
 }
 
 .title {
+  animation: flicker 1.5s infinite alternate;  
   color: white;
-  font-size: 2rem;
+  font-size: 4rem;
   text-transform: uppercase;
   display: inline-block;
   margin-right: auto;
@@ -141,6 +169,33 @@ nav ul li {
   font-weight: bold;
   text-decoration: none;
   list-style: none;
+  text-shadow:
+  0 2px 7px #fff,
+  0 5px 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #000,
+      0 0 80px #f09,
+      0 0 80px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
 }
 
 .navlinks ul {
@@ -186,7 +241,10 @@ main{
   width: 90%;
   margin: auto
 }
-
+/* 
+h3 {
+  color: red;
+} */
 
 /* code container  */
 .code-container{
@@ -204,6 +262,12 @@ main{
   line-height: 2rem
 }
 
+@media(max-width: 1024px){
+  .title {
+    font-size: 2rem;
+  }
+} 
+
 
 @media only screen and (min-width: 800px) {
   nav{
@@ -217,6 +281,7 @@ main{
   header h1{
     text-align: center;
     font-size: 3.5rem;
+    padding: 0 10px;
   }
   .topic h2 {
     font-size: 2.5rem;

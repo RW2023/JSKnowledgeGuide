@@ -20,7 +20,7 @@ body {
 }
 
 .topic-details h3{
-  color: rgb(61, 70, 100);
+  color: rgb(189, 195, 214);
   text-decoration: underline;
   font-weight: 500;
 }
@@ -44,7 +44,7 @@ body {
 
 /* navbar  */
 nav {
-  background-color: rgb(44, 120, 143);
+  background-color: rgb(42, 51, 53);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
   display: flex;
   flex-direction: column;
@@ -271,4 +271,64 @@ main{
 
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+/* Light/dark mode */
+/* Buttons */
 
+.btn {
+  background-color: white;
+  width: 15em;
+  height: 8em;
+  border-radius: 10em;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 0 0.5em;
+
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+              inset 0 8px 8px rgba(0, 0, 0, .1),
+              inset 0 -4px 4px rgba(0, 0, 0, .1);
+      
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn__indicator {
+  background-color: white;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+
+  position: absolute;
+
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+
+  transition: transform .3s ease;
+}
+
+.btn__icon-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon {
+  color: rgb(228, 228, 23);
+  font-size: 3rem;
+}
+
+/* Darkmode */
+
+body.darkmode {
+  background: rgb(54,0,51);
+  background: linear-gradient(0deg, rgba(54,0,51,0.938813025210084) 50%, rgba(11,135,147,1) 100%);
+}
+
+.darkmode .btn__indicator {
+  transform: translateX(8em);
+}

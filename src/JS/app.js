@@ -9,3 +9,14 @@ function testJs(event) {
 }
 
 document.addEventListener('keydown', testJs);
+
+// Light/dark mode
+
+const body = document.querySelector('body');
+const btn = document.querySelector('.btn');
+
+
+btn.addEventListener('click', () => {
+
+  body.classList.toggle('darkmode');
+})
